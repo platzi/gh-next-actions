@@ -5,7 +5,7 @@ on: [pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy
+    strategy:
       matrix:
         node: ['16']
     steps
