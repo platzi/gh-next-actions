@@ -24,6 +24,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "postcss": "^8.3.11",
     "prettier": "^2.4.1",
+    "stylelint": "^14.13.0",
+    "stylelint-config-recommended": "^9.0.0",
     "tailwindcss": "^2.2.19"
   },
   "description": "a Streamers Tool",
