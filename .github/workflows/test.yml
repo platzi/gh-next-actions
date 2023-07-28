@@ -2,6 +2,7 @@ name: build-test
 
 on: [pull_request]
 
+<<<<<<< HEAD
 jobs: 
   build:
     runs-on: ubuntu-latest
@@ -21,3 +22,19 @@ jobs:
 
 
 
+=======
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ['16']
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+      - run: npm install
+      - run: npm run lint
+>>>>>>> f50ad4ac6861d9dcd7dcd6cd6d437b81b972967b
