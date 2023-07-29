@@ -1,40 +1,20 @@
-name: build-test
+   name: build-test
+   on: [pull_request]
 
-on: [pull_request]
-
-<<<<<<< HEAD
-jobs: 
-  build:
-    runs-on: ubuntu-latest
-     strategy
-  matrix:
-        node: ['16']
-    steps:
-       - uses:  actions/checkout@v2
-       - name:  setup node 16
-         uses:  actcions/setup-node@v2
-         with:
-            node-version 16.x
-       - run: npm install
-       - run: npm run lint
-         
-       
-
-
-
-=======
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    strategy:
+   jobs: 
+    build:
+     runs-on: ubuntu-latest
+     strategy:
       matrix:
-        node: ['16']
-    steps:
-      - uses: actions/checkout@v2
-      - name: Setup Node 16
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16.x
-      - run: npm install
-      - run: npm run lint
->>>>>>> f50ad4ac6861d9dcd7dcd6cd6d437b81b972967b
+       node: ['16']
+       steps: 
+           - uses: actions/checkot@v2 
+           - name: setup node 16
+             uses: actcions/setup-node@v2 
+       with:
+           - node-version 16.x
+           - run:  npm install
+           - run:  npm run lint
+
+
+
